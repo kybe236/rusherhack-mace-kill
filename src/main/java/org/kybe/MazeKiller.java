@@ -44,7 +44,9 @@ public class MazeKiller extends ToggleableModule {
 		);
 	}
 
+	@SuppressWarnings("ConstantConditions")
     @Subscribe
+
 	public void onUpdate(EventInteract event) {
 		//check if the module is enabled
 		if (!this.isToggled()) {
@@ -55,7 +57,6 @@ public class MazeKiller extends ToggleableModule {
 			if (!event.getAction().equals(EventInteract.Action.ATTACK)) {
 				return;
 			}
-            assert mc.player != null;
             if (!(mc.player.getMainHandItem().getItem() == Items.MACE)) {
 				return;
 			}
@@ -63,7 +64,7 @@ public class MazeKiller extends ToggleableModule {
 			Entity targetEntity = event.getTargetEntity();
             if (event.isCancelled() || targetEntity.isInvulnerable()) return;
 
-            Vec3 previouspos = new Vec3(targetEntity.getX(), targetEntity.getY(), targetEntity.getZ());
+            Vec3 previouspos = new Vec3(mc.player.getX(), mc.player.getY(), mc.player.getZ());
 
 			int blocks = getMaxHeightAbovePlayer();
 

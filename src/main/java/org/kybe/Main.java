@@ -4,9 +4,9 @@ import org.rusherhack.client.api.RusherHackAPI;
 import org.rusherhack.client.api.plugin.Plugin;
 
 /**
- * Example rusherhack plugin
+ * Maze insta kill 
  *
- * @author John200410
+ * @author kybe236
  */
 public class Main extends Plugin {
 	
@@ -14,16 +14,16 @@ public class Main extends Plugin {
 	public void onLoad() {
 		
 		//logger
-		this.getLogger().info("[KYBES-MAZE-KILLER] loaded");
+		this.getLogger().info("[KYBES-MACE-KILLER] loaded");
 		
 		//creating and registering a new module
-		final MazeKiller mazekiller = new MazeKiller();
-		RusherHackAPI.getModuleManager().registerFeature(mazekiller);
+		final MaceKiller macekiller = new MaceKiller();
+		RusherHackAPI.getModuleManager().registerFeature(macekiller);
 	}
 	
 	@Override
 	public void onUnload() {
-		this.getLogger().info("[KYBES-MAZE-KILLER] unloaded");
+		this.getLogger().info("[KYBES-MACE-KILLER] unloaded");
 	}
 	
 }

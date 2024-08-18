@@ -1,8 +1,8 @@
 {
   "Plugin-Class": "org.kybe.Main",
-  "Name": "Example Plugin",
+  "Name": "Mace kill",
   "Version": "${plugin_version}",
-  "Description": "Example rusherhack plugin",
+  "Description": "Mace insta kill",
   "Authors": [
     "kybe236"
   ],

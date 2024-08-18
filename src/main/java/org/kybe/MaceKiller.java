@@ -22,7 +22,7 @@ import org.rusherhack.core.setting.NumberSetting;
  *
  * @author kybe236
  */
-public class MazeKiller extends ToggleableModule {
+public class MaceKiller extends ToggleableModule {
 
         /**
          * Settings
@@ -34,8 +34,8 @@ public class MazeKiller extends ToggleableModule {
         /**
          * Constructor
          */
-        public MazeKiller() {
-                super("Maze Killer", "Makes more damage with maze", ModuleCategory.CLIENT);
+        public MaceKiller() {
+                super("Mace Killer", "Makes more damage with mace", ModuleCategory.CLIENT);
 
                 //register settings
                 this.registerSettings(
@@ -45,7 +45,7 @@ public class MazeKiller extends ToggleableModule {
         }
 
         @SuppressWarnings("ConstantConditions")
-    @Subscribe
+        @Subscribe
 
         public void onUpdate(EventInteract event) {
                 //check if the module is enabled
